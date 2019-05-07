@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7fe53559-3c7e-450b-94e8-793d4f33904b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/id/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/id/demo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/id/idcard_check.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/id/testx.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/video/video_check.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/idcard.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/idcard.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/id/testx.py" beforeDir="false" afterPath="$PROJECT_DIR$/id/testx.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -50,8 +43,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/id/testx.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="68" column="4" selection-start-line="68" selection-start-column="4" selection-end-line="68" selection-end-column="4" />
+            <state relative-caret-position="308">
+              <caret line="14" column="32" lean-forward="true" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
               <folding>
                 <element signature="e#15#34#0" expanded="true" />
               </folding>
@@ -224,8 +217,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/id/testx.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="68" column="4" selection-start-line="68" selection-start-column="4" selection-end-line="68" selection-end-column="4" />
+        <state relative-caret-position="308">
+          <caret line="14" column="32" lean-forward="true" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
           <folding>
             <element signature="e#15#34#0" expanded="true" />
           </folding>

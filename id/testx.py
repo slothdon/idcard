@@ -6,34 +6,34 @@ import cv2
 import idcard_check
 
 
-def test_contour(dir):
+def test_contour(path):
     """
     轮廓
-    :param dir:
+    :param path:
     :return:
     """
-    file_list = os.listdir(dir)
+    file_list = os.listdir(path)
     imgs = []
     for file_name in file_list:
-        img = cv2.imread(dir + '/' + file_name)
+        img = cv2.imread(path + '/' + file_name)
         bool_check, image = idcard_check.contour_check(img)
         imgs.append([str(bool_check, image)])
 
     idcard_check.show_resault(imgs, len(imgs))
 
 
-def test_quality(dir):
+def test_quality(path):
     """
     检测图片质量
-    :param dir:
+    :param path:
     :return:
     """
 
-    file_list = os.listdir(dir)
+    file_list = os.listdir(path)
     imgs_sharp = []
     imgs_unsharp = []
     for file_name in file_list:
-        img = cv2.imread(dir + '/' + file_name)
+        img = cv2.imread(path + '/' + file_name)
         bool_check, v, image = idcard_check.quality_check(img)
         if bool_check:
             print(file_name + '(pass):' + str(v))
