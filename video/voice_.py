@@ -6,6 +6,7 @@ import numpy as np
 SUCCESS = 0
 FAIL = 1
 
+
 # 需要添加录音互斥功能能,某些功能开启的时候录音暂时关闭
 def ZCR(curFrame):
     # 过零率
@@ -253,7 +254,7 @@ class FileParser(Vad):
 if __name__ == "__main__":
     stream_test = FileParser()
 
-    filename = '201904111554969927903.wav'
+    filename = 'temp.mp3'
     result = stream_test.read_file(filename)
     if result != FAIL:
         stream_test.run(0)

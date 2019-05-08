@@ -3,6 +3,7 @@ import os
 import glob
 from pydub import AudioSegment
 import subprocess
+from video import voice_
 
 
 def face_check(path):
@@ -65,8 +66,11 @@ def voice_check(path):
 
             return_get = subprocess.call(get_mp3, shell=True)
             return_cut = subprocess.call(cut_mp3, shell=True)
+
+            # voice_()
+            #
             os.remove('temp.mp3')
-            os.rename('tempcut.mp3', os.path.splitext(i)[0] + '.mp3')
+            os.rename('tempcut.mp3', os.path.splitext(file_name)[0] + '.mp3')
             os.rename('temp.mp4', file_name)
             print(return_get, return_cut)
 
