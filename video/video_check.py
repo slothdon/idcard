@@ -1,4 +1,8 @@
 import cv2
+import os
+import glob
+from pydub import AudioSegment
+import subprocess
 
 
 def face_check(path):
@@ -12,7 +16,7 @@ def face_check(path):
     while True:
         ret, frame = video.read()
 
-        if count % 2 != 0:
+        if (count % 2) != 0:
             count += 1
             continue
 
@@ -49,6 +53,24 @@ def face_check(path):
     return True
 
 
+def voice_check(path):
+
+    dir = os.listdir(path)
+
+    for file_name in dir:
+        if os.path.splitext(file_name)[1] == '.mp4':
+            os.rename(file_name, 'temp.mp4')
+            get_mp3 = 'ffmpeg -i temp.mp4 -f mp3 -vn temp.mp3'
+            cut_mp3 = 'ffmpeg -i temp.mp3 -ss 00:00:15 -acodec copy tempcut.mp3'
+
+            return_get = subprocess.call(get_mp3, shell=True)
+            return_cut = subprocess.call(cut_mp3, shell=True)
+            os.remove('temp.mp3')
+            os.rename('tempcut.mp3', os.path.splitext(i)[0] + '.mp3')
+            os.rename('temp.mp4', file_name)
+            print(return_get, return_cut)
+
+
 if __name__ == '__main__':
-    path = '../img/video/x.mp4'
-    face_check()
+    path = '../data/video/201904111554969927903.mp4'
+    face_check(path)
